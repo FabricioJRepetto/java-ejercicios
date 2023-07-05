@@ -2,14 +2,12 @@ package parte3;
 
 import java.util.Objects;
 
-public class Gerente extends Funcionario implements Autenticable {
+public class Administrador extends Funcionario implements Autenticable {
     private String clave;
 
-    // Sobreescritura/Override de metodo
     @Override
     public double getBonificacion() {
-        System.out.print("+100% ");
-        return super.getSalario() * 1.1;
+        return 0;
     }
 
     @Override

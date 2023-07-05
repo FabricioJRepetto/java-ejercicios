@@ -1,7 +1,5 @@
 package parte3;
 
-import parte2.Cliente;
-
 public abstract class Cuenta {
     protected double saldo;
     private int agencia;
