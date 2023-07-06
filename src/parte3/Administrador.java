@@ -1,22 +1,28 @@
 package parte3;
 
+import parte4.AutenticacionUtil;
+
 import java.util.Objects;
 
 public class Administrador extends Funcionario implements Autenticable {
-    private String clave;
+    private AutenticacionUtil util;
+
+    public Administrador() {
+        this.util = new AutenticacionUtil();
+    }
 
     @Override
     public double getBonificacion() {
-        return 0;
+        return super.getSalario() * 0.5;
     }
 
     @Override
     public void setClave(String clave) {
-        this.clave = clave;
+        this.util.setClave(clave);
     }
 
     @Override
     public boolean iniciarSesion(String clave) {
-        return Objects.equals(clave, this.clave);
+        return this.util.iniciarSesion(clave);
     }
 }
