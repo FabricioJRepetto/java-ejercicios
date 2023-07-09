@@ -1,7 +1,6 @@
-package p3_polimorfismo.parte3;
+package p5_java_lang.arg.com.bytebank.test;
 
-import p3_polimorfismo.parte3.Gerente;
-import p3_polimorfismo.parte3.Cliente;
+import p5_java_lang.arg.com.bytebank.modelos.*;
 
 public class TestSistema {
     public static void main(String[] args) {

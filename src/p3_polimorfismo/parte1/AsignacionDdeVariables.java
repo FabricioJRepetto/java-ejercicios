@@ -1,4 +1,4 @@
-package parte1;
+package p3_polimorfismo.parte1;
 
 public class AsignacionDdeVariables {
     public static void main(String[] args) {

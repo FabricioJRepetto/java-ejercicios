@@ -1,4 +1,4 @@
-package parte2;
+package p3_polimorfismo.parte2;
 
 public class Cliente {
     private String nombre;

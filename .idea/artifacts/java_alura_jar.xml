@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="java-alura:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/java_alura_jar</output-path>
+    <root id="archive" name="java-alura.jar">
+      <element id="module-output" name="java-alura" />
+    </root>
+  </artifact>
+</component>

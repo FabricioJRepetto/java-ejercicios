@@ -1,6 +1,6 @@
 package p3_polimorfismo.parte2;
 
-import parte2.Cliente;
+import p3_polimorfismo.parte2.Cliente;
 
 public class Cuenta {
     private double saldo;

@@ -1,5 +1,6 @@
-package p3_polimorfismo.parte3;
+package p5_java_lang.arg.com.bytebank.test;
 
+import  p5_java_lang.arg.com.bytebank.modelos.*;
 public class TestPolimorfismo { // Polimorfismo
     public static void main(String[] args) {
         // El elemento más genérico puede adaptarse al más específico,

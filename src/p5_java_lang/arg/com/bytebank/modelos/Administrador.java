@@ -1,19 +1,17 @@
-package p3_polimorfismo.parte3;
+package p5_java_lang.arg.com.bytebank.modelos;
 
-import p3_polimorfismo.parte4.AutenticacionUtil;
-import java.util.Objects;
+import p5_java_lang.arg.com.bytebank.util.AutenticacionUtil;
 
-public class Gerente extends Funcionario implements Autenticable {
+public class Administrador extends Funcionario implements Autenticable {
     private AutenticacionUtil util;
 
-    public Gerente() {
+    public Administrador() {
         this.util = new AutenticacionUtil();
     }
 
-    // Sobreescritura/Override de metodo
     @Override
     public double getBonificacion() {
-        return super.getSalario() * 1.1;
+        return super.getSalario() * 0.5;
     }
 
     @Override

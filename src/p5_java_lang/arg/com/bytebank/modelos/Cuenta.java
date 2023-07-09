@@ -1,6 +1,5 @@
-package p3_polimorfismo.parte3;
+package p5_java_lang.arg.com.bytebank.modelos;
 
-import p3_polimorfismo.parte3.Cliente;
 import p4_excepciones.parte_5.CuentasException;
 
 public abstract class Cuenta {
@@ -32,13 +31,28 @@ public abstract class Cuenta {
 
     public abstract void depositar(double valor);
 
+    /**
+     * Descuenta el valor del saldo de la cuenta.
+     * Si el saldo es menor al valor, lanza una excepción.
+     *
+     * @param valor
+     * @throws CuentasException
+     */
     public void retirar(double valor) throws CuentasException {
         if (this.saldo < valor) {
             throw new CuentasException("Saldo insuficiente.");
         }
-        this.saldo += valor;
+        this.saldo -= valor;
     }
 
+    /**
+     * Descuenta el valor del saldo de la cuenta y lo deposita en la cuenta destino.
+     * Si el saldo es menor al valor, lanza una excepción.
+     *
+     * @param valor
+     * @param destino
+     * @throws CuentasException
+     */
     public void transferir(double valor, Cuenta destino) throws CuentasException {
         if (this.saldo < valor) {
             throw new CuentasException("Saldo insuficiente.");
@@ -69,5 +83,10 @@ public abstract class Cuenta {
 
     public void setTitular(Cliente titular) {
         this.titular = titular;
+    }
+
+    @Override
+    public String toString() {
+        return "Agencia: " + this.agencia + " - Numero: " + this.numero + " / Titular: " + this.titular.getNombre() + " - Saldo: $" + this.saldo;
     }
 }

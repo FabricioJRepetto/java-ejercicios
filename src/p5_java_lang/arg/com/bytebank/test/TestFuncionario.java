@@ -1,6 +1,6 @@
-package p3_polimorfismo.parte3;
+package p5_java_lang.arg.com.bytebank.test;
 
-import p3_polimorfismo.parte3.Contador;
+import  p5_java_lang.arg.com.bytebank.modelos.*;
 public class TestFuncionario {
     public static void main(String[] args) {
         Funcionario diego = new Contador();

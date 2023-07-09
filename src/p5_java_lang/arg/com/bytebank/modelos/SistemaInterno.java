@@ -1,6 +1,4 @@
-package p3_polimorfismo.parte3;
-
-import p3_polimorfismo.parte3.Funcionario;
+package p5_java_lang.arg.com.bytebank.modelos;
 
 public class SistemaInterno {
     private String clave = "1234";

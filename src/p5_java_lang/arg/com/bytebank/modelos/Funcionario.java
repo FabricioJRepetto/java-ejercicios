@@ -1,4 +1,4 @@
-package p3_polimorfismo.parte3;
+package p5_java_lang.arg.com.bytebank.modelos;
 
 public abstract class Funcionario {
     private String nombre;
