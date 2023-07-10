@@ -24,6 +24,24 @@ public abstract class Cuenta {
 
         contador++;
     }
+    public Cuenta(int agencia, int numero) {
+        if (agencia <= 0) {
+            System.out.println("Agencia no puede ser menor a 0");
+            this.agencia = 1;
+        } else {
+            this.agencia = agencia;
+        }
+        if (numero <= 0) {
+            System.out.println("Número no puede ser menor a 0");
+            this.numero = 1;
+        } else {
+            this.numero = numero;
+        }
+
+        titular = new Cliente();
+
+        contador++;
+    }
 
     public static int getContador() {
         return contador;
@@ -83,6 +101,13 @@ public abstract class Cuenta {
 
     public void setTitular(Cliente titular) {
         this.titular = titular;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Cuenta cuenta = (Cuenta) obj;
+        return this.agencia == cuenta.getAgencia() &&
+                this.numero == cuenta.getNumero();
     }
 
     @Override
