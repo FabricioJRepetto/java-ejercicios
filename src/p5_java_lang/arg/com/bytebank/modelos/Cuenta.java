@@ -2,7 +2,7 @@ package p5_java_lang.arg.com.bytebank.modelos;
 
 import p4_excepciones.parte_5.CuentasException;
 
-public abstract class Cuenta {
+public abstract class Cuenta implements Comparable<Cuenta> {
     protected double saldo;
     private int agencia;
     private int numero;
@@ -113,5 +113,11 @@ public abstract class Cuenta {
     @Override
     public String toString() {
         return "Agencia: " + this.agencia + " - Numero: " + this.numero + " / Titular: " + this.titular.getNombre() + " - Saldo: $" + this.saldo;
+    }
+
+    @Override
+    public int compareTo(Cuenta o) {
+        // Orden natural por Agencia
+        return this.agencia - o.getAgencia();
     }
 }
