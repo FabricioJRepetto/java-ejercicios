@@ -2,12 +2,17 @@
 # Curso Java Orientado a Objetos
 
 Oracle ONE - Alura
-- Parte 1
-- Parte 2
-- Parte 3
-- Parte 4
-- Parte 5
-- Parte 6 {#parte-6}
+- [Primeros pasos](#parte-1-primeros-pasos)
+- [Orientación a Objetos](#parte-2-orientación-a-objetos)
+- [Polimorfismo - Herencias e Interfaces](#parte-3-polimorfismo---herencias-e-interfaces)
+- [Excepciones](#parte-4-excepciones)
+- [Object y String](#parte-5-object-y-string)
+- [Colecciones, Wrappers y Lambda expressions](#parte-6-colecciones-wrappers-y-lambda-expressions)<br>
+   Arrays<br>Referencias<br>ArrayList y Generics<br>Equals<br>Vectores e interfaz Collection<br>Wrappers<br>Ordenando listas<br>Clases anónimas y Lambda expressions
+<br>
+<br>
+---
+<br>
 
 ### Parte 1: Primeros pasos
 
@@ -19,7 +24,7 @@ Oracle ONE - Alura
 
 ### Parte 5: Object y String
 
-### Parte 6: Colecciones, Wrappers y Lambda expressions {#parte-6}
+### Parte 6: Colecciones, Wrappers y Lambda expressions
 
 1) **Arrays**
 Guardan referencias a la memoria HEAP.
