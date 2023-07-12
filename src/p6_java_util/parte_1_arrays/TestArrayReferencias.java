@@ -28,10 +28,9 @@ public class TestArrayReferencias {
          podemos hacer el cast que necesitemos
          siempre y cuando el polimorfismo sea posible
 
-         Si lo que guardamos es una referencia
+         Si guardamos un obj de otro tipo en un Array de tipo genérico (Obejct[])
                     HAY QUE CASTEAR
-         para poder utilizar los métodos del obj.
-         Ya que una referencia solo es una dirección en memoria
+         para poder utilizar los métodos del obj. que querramos tomar de la lista.
          */
         Cliente refClient = (Cliente) referencias[2];
         System.out.println(refClient.getNombre());

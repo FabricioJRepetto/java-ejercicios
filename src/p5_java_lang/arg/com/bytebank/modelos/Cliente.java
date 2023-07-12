@@ -10,10 +10,15 @@ public class Cliente implements Autenticable {
     // El acoplamiento de objetos sirve para facilitar la reutilización de código
     // En este caso la clase util aisla toda la lóica de los métodos de autenticación
     private AutenticacionUtil util;
-
     public Cliente() {
         this.util = new AutenticacionUtil();
     }
+    public Cliente(String nombre) {
+        this.nombre = nombre;
+
+        this.util = new AutenticacionUtil();
+    }
+
 
     public String getNombre() {
         return nombre;
@@ -47,5 +52,10 @@ public class Cliente implements Autenticable {
     @Override
     public boolean iniciarSesion(String clave) {
         return this.util.iniciarSesion(clave);
+    }
+
+    @Override
+    public String toString() {
+        return this.nombre + ", Documento: " + this.documento;
     }
 }

@@ -1,5 +1,7 @@
 package p6_java_util.parte_1_arrays;
 
+import p5_java_lang.arg.com.bytebank.modelos.Cliente;
+
 public class TestArrayPrimitivos {
     public static void main(String[] args) {
         int[] edades = new int[11];

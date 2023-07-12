@@ -101,7 +101,9 @@ public class TestOrden {
         // });
 
         // ? --- Utilizando Lambdas:
-        lista.sort((c1, c2) -> Integer.compare(c1.getNumero(), c2.getNumero()));
+        lista.sort((c1, c2) -> {
+            return Integer.compare(c1.getNumero(), c2.getNumero());
+        });
 
 
         // * Imprimir lista ordenada -----------
